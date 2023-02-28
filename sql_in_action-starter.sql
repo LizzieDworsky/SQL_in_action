@@ -89,14 +89,4 @@
 
 -- EXPECTED OUTPUT: The Box House Hotel with 6 listings
 
-
--- <<<<<<<<<<<<<<<<<<<<<< PROBLEM 11 >>>>>>>>>>>>>>>>>>>>>>>
--- <<<<<<<<<<<<<<<<<<<<<<< WRAP UP >>>>>>>>>>>>>>>>>>>>>>>>>
--- What do you think makes a successful AirBnB rental in this market? What factors seem to be at play the most?
--- Write a few sentences and include them with your project submission in the README file 
-
-
--- <<<<<<<<<<<<<<<<<<<<< ** BONUS ** >>>>>>>>>>>>>>>>>>>>>>>
--- Find the the percent above or below each listing is compared to the average price for all listings.
--- HINT: No hints! It's a bonus for a reason :)
-
+-- SELECT host_name, count(host_name) FROM intro_sql.final_airbnb GROUP BY host_name ORDER BY count(host_name) desc LIMIT 1;
